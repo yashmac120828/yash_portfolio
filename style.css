@@ -1,0 +1,600 @@
+*{
+    margin:0;
+    padding:0;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #0e050f;
+    font-family:'Poppins',sans-serif;
+    color:white;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height:100px;
+    background-color: #170b3b;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style:none;
+    margin: 0 23px
+}
+nav ul a{
+    text-decoration: none;
+    cursor: pointer;
+    border: none;
+    color:white;
+
+}
+nav ul a:hover{
+    font-size: large;
+    color:#b2679a;
+    transition: all 0.3s ease-in-out 0.2s;
+}
+#element{
+    color:#650aac; 
+}
+.left{
+    font-size: 1.5rem;
+    color:beige;
+}
+.rightSection img{
+    animation: jump 5s infinite;
+}
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at original position */
+    }
+    50% {
+        transform: translateY(-20px); /* Move up by 20 pixels */
+    }
+}
+.theme{
+    height:60px;
+    width:60px;
+    outline:none;
+    background-color:#650aac;
+    color:#fff;
+    border:none;
+    border-radius:20px;
+    position:sticky;
+    top: 0; /* Sticks to the top of the viewport */
+    z-index: 1000;
+    margin-left:1400px;
+    margin-top:20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/*Main tag*/
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.firstSection> div{
+    width:30%;
+}
+.leftSection{
+    font-size: 3rem;
+    margin: 30px 0;
+}
+.rightSection img{
+    height:450px;
+    width:450px;
+    margin-top:50px;
+}
+.purple{
+    color:#650aac;
+}
+.hr{
+    background-color:#650aac;
+    height:5px;
+    width:auto;
+    outline: none;
+    border: none;
+    margin:20px;
+}
+/*SecondSection*/
+.secondSection{
+    max-width:80vw;
+    margin:auto;
+    height:300px;
+    /* background-color: red; */
+}
+.secondSection h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.secondSection .box{
+    margin-top:56px;
+    margin-right:0;
+    margin-left:0;
+    margin-bottom:0;
+    width: 80vw;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* background-color: wheat; */
+}
+.secondSection .box .inbox{
+    /* background-color: yellow; */
+    width:80vw;
+    height:auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.secondSection .box .imgskills{
+    /* background-color: #650aac; */
+    height: 100px;
+    width: 100px;
+}
+
+.secondSection .box .inbox .imgskills h3{
+    text-align: center;
+}
+@keyframes popoutFromBottom {
+    0% {
+        transform: translateY(20px) scale(0.5); /* Start slightly below and smaller */
+        opacity: 0; /* Start invisible */
+    }
+    50% {
+        transform: translateY(-10px) scale(1.1); /* Move up slightly and scale up */
+        opacity: 1; /* Fully visible */
+    }
+    100% {
+        transform: translateY(0) scale(1); /* Return to original position and size */
+    }
+}
+
+.imgskills img {
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.imgskills.popout img {
+    animation: popoutFromBottom 0.5s forwards; /* Apply the popout animation */
+}
+.imgskills2,.imgskills:hover img {
+    animation: popoutFromBottom 0.5s forwards; /* Apply the same popout animation on hover */
+    cursor: pointer;
+}
+/*Third Section*/
+.thirdSection{
+    max-width:80vw;
+    margin:auto;
+    height:450px;
+}
+.thirdSection h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.thirdSection .box{
+ margin-top:56px;
+ margin-right:0;
+ margin-left:0;
+ margin-bottom: 0;
+ width: 80vw;
+ height:50%;
+ display:flex;
+ justify-content: space-around;
+ align-items: center;
+}
+.box1,.box2,.box3{
+    height: 90%;
+    width: 25vw;
+    
+}
+.thirdSection .box video{
+    height:90%;
+    width:25vw;
+}
+.thirdSection .box-2{
+    margin:0px 0;
+    width: 80vw;
+    height:20%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+   }
+.box4,.box5,.box6{
+       height: 90%;
+       width: 25vw;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+   }
+/*Fourth Sectio*/
+.fourthSection{
+    max-width:80vw;
+    margin:auto;
+    height:450px;
+    /* background-color: red; */
+}
+.fourthSection h1{
+    text-align: center;
+    font-size: 2rem;
+}
+.fourthSection .box{
+    margin-right:0;
+    margin-left:0;
+    margin-bottom: 0;
+    width: 80vw;
+    height:80%;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* background-color: yellow; */
+}
+.fourthSection .box a{
+    text-decoration: none;
+    color:white;
+    height:70%;
+    width: 30vw;
+}
+.fourthSection .box .inbox{
+    width: 80vw;
+    height:90%;
+    display:flex;
+    justify-content: space-around;
+    /* background-color: cyan; */
+}
+.netflix{
+    height:100%;
+    width:30vw;
+    /* background-color: #650aac; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.amazon{
+    height:100%;
+    width:30vw;
+    /* background-color: #650aac; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.netflix,.amazon img:hover{
+    cursor: pointer;
+}
+.fourthSection .box .netflix h2{
+    text-align: center;
+}
+.fourthSection .box .amazon h2{
+    text-align: center;
+}
+
+
+/*Footer Section*/
+footer{
+    height:500px;
+    width:90vw;
+    /* background-color: red; */
+    margin:50px;
+}
+footer h1{
+    text-align: center;
+    font-size: 2rem;
+}
+footer .profile{
+    height:300px;
+    width:300px;
+    margin-left:10px;
+    border-radius: 50%;
+}
+.contactmebox{
+    height:500px;
+    width:90vw;
+    /* background-color:orange; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.imgbox{
+    /* background-color: #170b3b; */
+    width:20vw;
+}
+.detailsbox{
+    height: 60%;
+    width: 30vw;
+    /* background-color: #0e050f; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.c1{
+    text-decoration: none;
+    color:#fff;
+    border: none;
+    width: 100%;
+}
+.b1{
+    width: 100%;
+    /* background-color: #650aac; */
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.b1:hover{
+    color:#fff;
+    background-color: #650aac;
+    transition: all 0.5s linear 0.3s;
+}
+.vertical-ruler{
+    height:100%;
+    width:5px;
+    background-color: #650aac;
+}
+.formbox{
+    width: 30vw;
+    height:90%;
+    /* background-color: #0e050f; */
+}
+.formbox-inside{
+    width:30vw;
+    height: 100%;
+    background:#fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 5px solid #650aac;
+    border-radius: 10px;
+}
+.formbox h1{
+    color:#170b3b;
+    text-align: center;
+}
+#h3{
+    margin-left:10px;
+    color:#170b3b;
+}
+.inpt{
+    outline: none;
+    height: 30px;
+    width:90%;
+    color:#0e050f;
+}
+.inpt:focus{
+    border:2px solid #650aac;
+    border-radius: 4px;
+}
+.submit{
+    height:8%;
+    width: 50%;
+    outline:none;
+    color:#fff;
+    background-color: #650aac;
+    margin-left:100px;
+}
+
+/*Responsive website code*/
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        flex-direction: column; 
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .theme{
+        margin-left: 350px;
+    }
+    .leftSection{
+        font-size: 1.5rem;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .firstSection > div {
+        width: 90%;
+        text-align: center;
+    }
+
+    .rightSection img {
+        height: 300px;
+        width: 300px;
+    }
+    .secondSection{
+        height: auto;
+    }
+    .secondSection .box {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .secondSection .box .inbox{
+        flex-direction: row; 
+        align-items: left;
+        height: auto;
+    }
+    .secondSection .box .inbox .imgskills img{
+        height:50px;
+        width: 50px;
+       
+    }
+    .secondSection .box .inbox .imgskills h3{
+        text-align: left;
+        font-size: small;
+    }
+    .thirdSection{
+        height: 280px;
+    }
+    .thirdSection .box{
+        height: 20%;
+        margin-top: 36px;
+    }
+    .box video{
+        height: 100%;
+        width: 100%;
+    }
+    .box1,.box2,.box3{
+        height: 100px;
+        width: 90px;
+    }
+    .thirdSection .h1{
+        font-size: 0.8rem;
+    }
+    .fourthSection{
+        height: auto;
+    }
+    .fourthSection .box {
+        height: auto;
+        flex-direction: row;
+        align-items: center; 
+    }
+
+    .fourthSection .box .inbox {
+        flex-direction: row; 
+    }
+    .fourthSection .box .inbox img{
+        height:100px;
+        width: 100px;
+    }
+    .fourthSection .box .inbox h2{
+        font-size: small;
+    }
+    .fourthSection .box .inbox h3{
+        font-size: smaller;
+    }
+    footer {
+        display:flex;
+        height: auto;
+        flex-direction: column; 
+        align-items: center; 
+        width: auto;
+    }
+    
+    .contactmebox {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .vertical-ruler{
+        height: 5px;
+        width: 300px;
+        margin: 30px 0px 30px 0px;
+    }
+    .contactmebox .imgbox{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        height: auto;
+        width: auto;
+    }
+    .contactmebox .imgbox img{
+        height:150px;
+        width: 150px;
+        margin:5px;
+
+    }
+    .detailsbox{
+        height: auto;
+        width: auto;
+        margin: auto;
+    }
+    .formbox {
+        height:400px;
+        width: auto;
+    }
+
+    .formbox-inside {
+        width:auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .submit {
+        width:50%;
+        height: 10%;
+        margin:10px 10px 10px 80px;
+    }
+}
+/* Animation for fading in sections */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Bounce animation for the image in the Home section */
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Pop-out animation for skills images */
+.imgskills.popout {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: popout 0.5s forwards;
+}
+
+@keyframes popout {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect for project boxes */
+.netflix:hover, .amazon:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect for contact links */
+.b1:hover {
+    background-color: #650aac;
+    transition: all 0.5s linear 0.3s;
+}
+
+/* Add a slight shadow effect on hover for the theme button */
+.theme:hover {
+    box-shadow: 0 4px 20px rgba(101, 10, 172, 0.5);
+    transition: box-shadow 0.3s ease;
+}
